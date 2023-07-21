@@ -1,0 +1,17 @@
+{
+  "name": "music_stat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm i && npm --prefix ./frontend i && npm --prefix ./backend i",
+    "all": "concurrently \"cd frontend && npm start\" \"cd backend && npm run dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
