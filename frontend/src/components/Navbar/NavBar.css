@@ -1,0 +1,48 @@
+.navbar-container {
+    position: fixed;
+    left: 0.5em;
+    top: 50%;
+    transform: translate(-0, -50%);
+    height: 95%;
+    width: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: var(--main-card-border-radius);
+    background-color: var(--contrast-color);
+    z-index: 1;
+}
+
+.arrow-navbar {
+    position: fixed;
+    left: 5.2em;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.navbar-container>a {
+    height: 3.5em;
+    width: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: var(--main-card-border-radius);
+}
+
+.navbar-container>a>.icon {
+    height: 2.5em;
+    width: 2.5em;
+    fill: var(--card-bg);
+    border-radius: var(--main-card-border-radius);
+}
+
+.navbar-container>a.active {
+    background-color: var(--faded-color);
+}
+
+.navbar-container>a.active>.icon {
+    fill: var(--highlight-color);
+}

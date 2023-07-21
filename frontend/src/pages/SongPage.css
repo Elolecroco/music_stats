@@ -1,0 +1,7 @@
+.song-page {
+    height: 100%;
+    margin: 0 2% 2% 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

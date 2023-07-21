@@ -1,0 +1,26 @@
+.years-container,
+.seasons-container,
+.languages-container {
+    width: 100%;
+}
+.years-btn-container,
+.seasons-btn-container,
+.languages-btn-container {
+    margin: 1.5em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.years-btn-results,
+.seasons-btn-results,
+.languages-btn-results {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.song-count {color: var(--contrast-color);}

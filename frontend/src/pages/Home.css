@@ -1,0 +1,52 @@
+.home-page {
+    height: 100%;
+    margin: 0 2% 2% 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+}
+
+.home-page-header {
+    height: 15em;
+    width: 58%;
+    margin-top: 2%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    color: var(--contrast-color);
+    border: 1px solid var(--highlight-color);
+    border-radius: var(--main-card-border-radius);
+    box-shadow: 0 0 10px var(--highlight-color), 0 0 5px var(--faded-color) inset;
+    position: relative;
+}
+
+.top-artists-section {
+    position: absolute;
+    right: 0;
+    top: 2%;
+    width: 40%;
+    border-radius: var(--main-card-border-radius);
+    background-color: var(--card-bg);
+}
+
+.top-songs-section {
+    width: 58%;
+    border-radius: var(--main-card-border-radius);
+    background-color: var(--card-bg);
+}
+
+.top-artists-section>h2,
+.top-songs-section>h2 {
+    width: 100%;
+    height: 4em;
+    margin-top: 0;
+    padding: 1em;
+    border-radius: var(--main-card-border-radius);
+    background-color: var(--contrast-color);
+    color: var(--card-bg);
+    display: flex;
+    align-items: center;
+}

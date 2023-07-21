@@ -1,0 +1,124 @@
+.search-page {
+    height: 100%;
+    margin: 0 2% 2% 9%;
+    display: flex;
+    flex-direction: column;
+}
+.search-page-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.albums-container,
+.artists-container,
+.tracks-container {
+    height: 30em;
+    width: 100%;
+    margin: 1.5em auto;
+    display: flex;
+    flex-direction: column;
+}
+.albums-container>h2,
+.artists-container>h2,
+.tracks-container>h2 { 
+    text-transform: uppercase;
+}
+
+.albums-cards-container,
+.artists-cards-container,
+.tracks-cards-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    overflow: scroll;
+}
+.albums-cards-container::-webkit-scrollbar,
+.artists-cards-container::-webkit-scrollbar,
+.tracks-cards-container::-webkit-scrollbar {display: none;}
+
+.albums-card,
+.artists-card {
+    width: 10em;
+    height: 13em;
+    margin: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.tracks-card {
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--contrast-color)
+}
+
+.albums-img-container-box,
+.artists-img-container-box,
+.tracks-img-container-box {
+    margin-right: 3em;
+    box-shadow: var(--main-neumorph-effect);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.albums-img-container-box,
+.artists-img-container-box {
+    width: 7.5em;
+    height: 7.5em;
+}
+.tracks-img-container-box {
+    width: 4.3em;
+    height: 4.3em;
+}
+.albums-img-container-box,
+.tracks-img-container-box {border-radius: 4px;}
+
+.albums-img-container,
+.artists-img-container {
+    margin: 0.5em 0 0.5em 0;
+    width: 7em;
+    height: 7em;
+}
+.tracks-img-container {
+    height: 4em;
+    width: 4em;
+    border-radius: 4px;
+}
+.tracks-img-container>img {
+    height: 100%;
+    width: 100%;
+    object-fit: 100%;
+    border-radius: 4px;
+}
+
+.artists-img-container-box,
+.artists-img-container, 
+.artists-img-container>img {
+    border-radius: 50%;
+}
+
+.albums-img-container>img,
+.artists-img-container>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.albums-name-container,
+.artists-name-container,
+.tracks-name-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.isFav { fill: red;}

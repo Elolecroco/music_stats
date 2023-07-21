@@ -1,0 +1,27 @@
+.library-page {
+    height: 100%;
+    margin: 0 2% 2% 9%;
+    display: flex;
+    flex-direction: column;
+}
+
+.library-page-btn-container {
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.library-page-playlists-container {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding-top: 2em;
+    gap: 2em;
+}
+.library-page-playlists-container>a {color: var(--contrast-color);}

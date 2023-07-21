@@ -1,0 +1,39 @@
+.search-bar-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 70%;
+    margin: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.8em;
+    background-color: var(--card-bg);
+    border: none;
+    border-radius: 24px;
+    font-family: var(--main-font);
+    color: var(--faded-color);
+}
+.search-bar input:focus {
+    outline: none;
+    color: var(--contrast-color);
+}
+.search-btn {
+    height: 1.3em;
+    width: 1.3em;
+    position: relative;
+    right: 2.3em;
+    fill: var(--highlight-color);
+    transition: all 0.3s ease-in-out;
+}
+.search-btn:hover { 
+    fill: var(--second-highlight-color);
+    transform: rotate(45deg);
+}
